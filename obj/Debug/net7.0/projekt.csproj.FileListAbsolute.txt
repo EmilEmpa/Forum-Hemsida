@@ -1,0 +1,5 @@
+C:\Users\emiack29\OneDrive - Lärande\Dokument\Webbutveckling\projekt\obj\Debug\net7.0\projekt.csproj.AssemblyReference.cache
+C:\Users\emiack29\OneDrive - Lärande\Dokument\Webbutveckling\projekt\obj\Debug\net7.0\projekt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emiack29\OneDrive - Lärande\Dokument\Webbutveckling\projekt\obj\Debug\net7.0\projekt.AssemblyInfoInputs.cache
+C:\Users\emiack29\OneDrive - Lärande\Dokument\Webbutveckling\projekt\obj\Debug\net7.0\projekt.AssemblyInfo.cs
+C:\Users\emiack29\OneDrive - Lärande\Dokument\Webbutveckling\projekt\obj\Debug\net7.0\projekt.csproj.CoreCompileInputs.cache
