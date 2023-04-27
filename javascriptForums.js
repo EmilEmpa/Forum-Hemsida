@@ -9,8 +9,8 @@ createPostButton.addEventListener('click', function () {
     const popup = document.createElement('div');
 
     popup.classList.add('popup');
-    popup.innerHTML = 
-    `<div class="container">
+    popup.innerHTML =
+        `<div class="container">
     <h3>Create a new thread</h3>
     <label for="title">Title:</label>
     <input type="text" id="title">
@@ -39,7 +39,7 @@ createPostButton.addEventListener('click', function () {
 
         thread.classList.add('thread');
         thread.innerHTML =
-        `<h2>${titleInput.value}</h2>
+            `<h2>${titleInput.value}</h2>
         <p>${contentInput.value}</p>
         <div class="comments-wrapper">
         <button class="show-comments-button">Show comments</button>
@@ -170,4 +170,5 @@ forumData.forEach((threadData) => {
         // Store new comment in forumData
         threadData.comments.push(commentText.split(`,`));
         localStorage.setItem("forumData", JSON.stringify(forumData));
-    })})
+    })
+})
