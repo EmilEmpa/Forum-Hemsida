@@ -13,7 +13,7 @@ createPostButton.addEventListener('click', function () {
         `<div class="container">
     <h3>Create a new thread</h3>
     <label for="title">Title:</label>
-    <input type="text" id="title">
+    <input type="text" id="title" maxlength="50">
     <label for="content">Content:</label>
     <textarea class="content" id="content" contenteditable></textarea>
     <button type="submit">Create</button>
@@ -37,9 +37,9 @@ createPostButton.addEventListener('click', function () {
         const contentInput = popup.querySelector('#content');
         const thread = document.createElement('div');
 
-        // Check that the content is no more than 400 characters
-        if (contentInput.value.length > 400) {
-            alert("Content must be no more than 400 characters.");
+        // Check that the content is no more than 800 characters
+        if (contentInput.value.length > 800) {
+            alert("Content must be no more than 800 characters.");
             return;
         }
 
