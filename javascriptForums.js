@@ -37,6 +37,12 @@ createPostButton.addEventListener('click', function () {
         const contentInput = popup.querySelector('#content');
         const thread = document.createElement('div');
 
+        // Check that the content is no more than 400 characters
+        if (contentInput.value.length > 400) {
+            alert("Content must be no more than 400 characters.");
+            return;
+        }
+
         thread.classList.add('thread');
         thread.innerHTML =
             `<h2>${titleInput.value}</h2>
