@@ -179,6 +179,17 @@ button {
     width: 95%;
 }
 
+
+.comment p {
+    background-color: rgb(211, 211, 211);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.comments-wrapper {
+    width: 95%;
+}
+
 .content {
     max-width: 300px;
     max-height: 500px;
