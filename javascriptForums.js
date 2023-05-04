@@ -65,7 +65,7 @@ createPostButton.addEventListener('click', function () {
         const commentForm = thread.querySelector('.comment-form');
         const commentsWrapper = thread.querySelector('.comments-wrapper');
         const showCommentsButton = thread.querySelector('.show-comments-button');
-        const commentsContainer = thread.querySelector('.comments-container');
+        const commentsContainer = thread.querySelector('.comments-container');       
 
 
         let showingComments = false;
@@ -161,15 +161,14 @@ forumData.forEach((threadData) => {
         event.preventDefault();
         const commentInput = commentForm.querySelector("#comment");
         const commentText = commentInput.value.trim();
-        if (!commentText) {
-            return;
-        }
+        if (!commentText) {return;}
+
         const comment = document.createElement("div");
         comment.classList.add("comment");
         comment.innerHTML = `
       <p>${commentText}</p>
     `;
-        commentsContainer.appendChild(comment);
+        commentsContainer.prepend(comment);
         commentInput.value = "";
 
         // Store new comment in forumData

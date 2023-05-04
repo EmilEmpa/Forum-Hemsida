@@ -131,19 +131,6 @@ button {
     margin-top: 10px;
 }
 
-.comment-form {
-    display: none;
-}
-
-.show-comments .comment-form {
-    display: block;
-}
-
-.comment-txt {
-    max-height: 50px;
-    border-radius: 5px;
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -179,11 +166,26 @@ button {
     width: 95%;
 }
 
+.comment-form {
+    display: none;
+}
+
+.show-comments .comment-form {
+    display: block;
+}
+
+.comment-txt {
+    max-height: 50px;
+    border-radius: 5px;
+    width: 467px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15);
+}
 
 .comment p {
     background-color: rgb(211, 211, 211);
     border-radius: 5px;
-    padding: 10px;
+    padding: 10px; 
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15);
 }
 
 .comments-wrapper {
