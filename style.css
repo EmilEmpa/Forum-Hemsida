@@ -151,6 +151,9 @@ button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    overflow: auto;
+    word-wrap: break-word;
 }
 
 .thread {
@@ -159,12 +162,21 @@ button {
     align-items: center;
     flex-direction: column;
 
+    width: 500px;
+    overflow: auto;
+    word-wrap: break-word;
+    
+
     background-color: rgba(211, 211, 211, 0.571);
     border: 1px solid lightgray;
 
     border-radius: 5px;
     margin: 1em;
     padding: 1em;
+}
+
+.thread p {
+    width: 95%;
 }
 
 .content {

@@ -22,6 +22,7 @@ createPostButton.addEventListener('click', function () {
 
     </div> `;
 
+
     const closeButton = popup.querySelector('.close-button');
 
     closeButton.addEventListener('click', function () {
@@ -45,7 +46,8 @@ createPostButton.addEventListener('click', function () {
 
         thread.classList.add('thread');
         thread.innerHTML =
-            `<h2>${titleInput.value}</h2>
+        `<h2>${titleInput.value}</h2>
+
         <p>${contentInput.value}</p>
         <div class="comments-wrapper">
         <button class="show-comments-button">Show comments</button>
@@ -58,10 +60,7 @@ createPostButton.addEventListener('click', function () {
         </div> `;
 
 
-
-
         const container = document.querySelector('.threads-container');
-
         container.insertBefore(thread, container.firstChild);
         const commentForm = thread.querySelector('.comment-form');
         const commentsWrapper = thread.querySelector('.comments-wrapper');
