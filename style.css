@@ -188,6 +188,10 @@ button {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15);
 }
 
+.comment-txt{
+    
+}
+
 .comments-wrapper {
     width: 95%;
 }

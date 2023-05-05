@@ -51,12 +51,12 @@ createPostButton.addEventListener('click', function () {
         <p>${contentInput.value}</p>
         <div class="comments-wrapper">
         <button class="show-comments-button">Show comments</button>
-        <div class="comments-container"></div>
         <form class="comment-form" style="display: none;">
         <label for="comment">Leave a comment:</label>
         <textarea class="comment-txt" id="comment"></textarea>
         <button type="submit">Submit</button>
         </form>
+        <div class="comments-container"></div>
         </div> `;
 
 
@@ -101,7 +101,7 @@ createPostButton.addEventListener('click', function () {
             comment.innerHTML = `
             <p>${commentText}</p> `;
 
-            commentsContainer.appendChild(comment);
+            commentsContainer.insertAdjacentElement("afterbegin", comment);
             commentInput.value = '';
         });
 
